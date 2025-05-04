@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DOM Manipulation Demo</h1>
+    </header>
+
+    <main>
+        <section aria-label="Text manipulation section">
+            <div class="content-box">
+                <p id="changeable-text">Ibrahim Traoré is a Burkinabè military commander and the transitional president of Burkina Faso.</p>
+                <button onclick="changeText()">Change Text</button>
+            </div>
+        </section>
+
+        <section aria-label="Style modification section">
+            <div class="content-box">
+                <p id="style-target">This element's style will change</p>
+                <button onclick="toggleStyle()">Toggle Highlight</button>
+            </div>
+        </section>
+
+        <section aria-label="Element control section">
+            <div class="content-box">
+                <div id="element-container">
+                    <button onclick="createNewElement()">Add Element</button>
+                    <button onclick="removeLastElement()">Remove Element</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DOM Manipulation Demo</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
